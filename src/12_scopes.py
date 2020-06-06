@@ -6,6 +6,9 @@ x = 12
 
 def change_x():
     x = 99
+    def myinnerfunc():
+        print(x)
+    myinnerfunc()
 
 change_x()
 
@@ -19,6 +22,7 @@ def outer():
     y = 120
 
     def inner():
+        nonlocal y
         y = 999
 
     inner()
