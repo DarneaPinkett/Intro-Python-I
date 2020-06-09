@@ -22,7 +22,7 @@ x.close()
 # YOUR CODE HERE
 y = open("src/bar.txt", "w")
 y.write("lambda")
-y.write(" school")
+y.write(" school\n")
 y.write(" web developer")
 y.close()
 z = open("src/bar.txt", "r")
